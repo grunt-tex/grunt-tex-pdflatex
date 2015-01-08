@@ -46,10 +46,6 @@ module.exports = function(grunt) {
       fail: "test/fixtures/fail.tex"
     },
 
-    nodeunit: {
-      tests: ["test/*_test.js"]
-    },
-
     // Unit tests.
     mochaTest: {
       test: {
