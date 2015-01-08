@@ -9,7 +9,7 @@ var execOpts = {
 describe("When there are no TeX errors", function () {
 
   var out, code;
-  beforeEach(function (done) {
+  before(function (done) {
     exec("grunt pdflatex:succeed", execOpts, function (_err, _out, _code) {
       out = _out;
       code = _code;
@@ -31,7 +31,7 @@ describe("When there are no TeX errors", function () {
 describe("When there are TeX errors", function () {
 
   var out, code;
-  beforeEach(function (done) {
+  before(function (done) {
     exec("grunt pdflatex:fail", execOpts, function (_err, _out, _code) {
       out = _out;
       code = _code;
