@@ -39,7 +39,7 @@ describe("When there are TeX errors", function () {
     });
   });
 
-  it("should have output code 0", function () {
+  it("should have output code 1", function () {
     expect(code).to.equal(1);
   });
 
