@@ -7,4 +7,3 @@ before_install:
   - mkdir $HOME/ci-utils
   - curl -L https://github.com/grunt-tex/ci-utils/tarball/master | tar -zxpC $HOME/ci-utils --strip-components=1
   - PATH=$HOME/ci-utils/texlive/dist/bin/x86_64-linux:$PATH
-  - pdflatex --help
