@@ -4,6 +4,6 @@ node_js:
 before_install:
   - npm install -g grunt-cli
   - npm install
-  - curl -L https://github.com/krlmlr/texlive-squashfs/raw/master/out/texlive.tar.xz | tar -JxC ~
+  - curl -L https://github.com/grunt-tex/texlive-squashfs/raw/master/out/texlive.tar.xz | tar -JxC ~
 install:
   - PATH=$HOME/texlive/bin/x86_64-linux:$PATH
