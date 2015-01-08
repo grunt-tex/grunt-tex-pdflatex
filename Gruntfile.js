@@ -42,16 +42,8 @@ module.exports = function(grunt) {
           "output-directory": "tmp"
         }
       },
-      succeed: {
-        files: [
-          { src: "test/fixtures/succeed.tex" }
-        ]
-      },
-      fail: {
-        files: [
-          { src: "test/fixtures/fail.tex" }
-        ]
-      }
+      succeed: "test/fixtures/succeed.tex",
+      fail: "test/fixtures/fail.tex"
     },
 
     nodeunit: {
