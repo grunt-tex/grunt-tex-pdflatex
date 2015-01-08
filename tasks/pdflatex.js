@@ -40,9 +40,6 @@ module.exports = function(grunt) {
 
     // Iterate over all specified files, executing pdflatex on them
     var promises = this.filesSrc.map(function (file) {
-      var opts = {
-        cwd: path.dirname(file)
-      };
       return exec([].concat([], args, [file]))
         .spread(function (out, code) {
           // Return results as an object
