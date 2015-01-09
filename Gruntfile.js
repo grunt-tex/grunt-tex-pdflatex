@@ -39,7 +39,7 @@ module.exports = function(grunt) {
     pdflatex: {
       options: {
         args: {
-          "output-directory": "tmp"
+          "-output-directory": "tmp"
         }
       },
       succeed: "test/fixtures/succeed.tex",
